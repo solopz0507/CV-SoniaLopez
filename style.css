@@ -1,4 +1,5 @@
 
+/*--- Pour toutes les pages ---*/
 
 body {
     background-image: url("assets/Photos/Fond-Site.jpeg");
@@ -10,7 +11,7 @@ body {
 }
 
 nav {
-    background: linear-gradient( to bottom left,#001e46, #0000002d);
+    background-color: #0000002d;
     color: #85edff;
     display: flex;
     align-items: center;
@@ -43,6 +44,15 @@ h1 {
     margin-right: 60px;
 }
 
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 20px;
+}
+
 a {
     text-decoration: none;
     color: #ffbb00;
@@ -50,14 +60,39 @@ a {
     font-family: RobotoSerif-Variable;
 }
 
-.container {
-    position: relative;
+.text {
+    max-width: 700px;
+    height: 250px;
+    margin: auto auto auto 400px;
+    border-radius: 20% 40%;
+    color: #001e46;
+    background: radial-gradient(circle,#85edff 20%,#85ceff 50%, #1c93e2 85%);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
+
+footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #ffbb00;
+}
+
+
+/*--- index.html ---*/
+
 
 .container img {
     width: 300px;
     height: auto;
-    margin: 10px 400px auto auto;
+    margin: 0 auto auto 1100px;
     background-color: #ffbb00;
     border-radius: 50%;
     box-shadow: 0 0 15px #ffbb00, 0 0 50px #ffbb0071, 0 0 120px #ffbb0025;
@@ -67,8 +102,11 @@ a {
 
 .texte {
     position: absolute;
-    top: 50%;
+    z-index: 100;
     left: 50%;
+    top: 50%;
+    text-align: center;
+    padding: 10px;
     transform: translate(-50%, -50%);
     color: #ffbb00;
     background-color: #00122b;
@@ -88,24 +126,18 @@ a {
     background: radial-gradient(circle,#85edff 20%,#85ceff 50%, #1c93e2 85%);
 }
 
-
-p {
-    max-width: 700px;
-    height: 250px;
-    margin: auto auto auto 400px;
-    border-radius: 20% 40%;
-    color: #001e46;
-    background: radial-gradient(circle,#85edff 20%,#85ceff 50%, #1c93e2 85%);
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
+.présentation-boutons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-family: RobotoSerif-Variable;
 }
 
-div {
-    background: linear-gradient( to bottom left,#001e46, #0000002d);
+.section-fond {
+    background-color: #0000002d;
 }
 
 button {
@@ -158,17 +190,10 @@ button {
     transform: scale(0.95);
 }
 
-.présentation-boutons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    margin-top: 10px;
-    padding: 10px;
-    font-family: RobotoSerif-Variable;
-}
 
-.diplômes {
+/*--- Autres Pages ---*/
+
+.métiers {
     display: block;
     color: #00122b;
     background: linear-gradient(to bottom left, #85ceff, #85edff);
@@ -176,12 +201,23 @@ button {
     padding: 40px;
 }
 
-footer {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
+.compétences {
+
+}
+
+.diplômes {
+    display: block;
+    color: #00122b;
+    background: linear-gradient(to bottom left, #85ceff, #85edff);
+    margin: auto;
+    padding: 40px;
+    align-items: stretch;
+}
+
+.hobby {
+    display: block;
+    color: #00122b;
+    background: linear-gradient(to bottom left, #85ceff, #85edff);
     margin-bottom: 50px;
-    color: #ffbb00;
+    padding: 40px;
 }
