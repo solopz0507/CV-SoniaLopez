@@ -77,6 +77,7 @@ a {
 .commentaire {
     max-width: 700px;
     height: 250px;
+    padding: 5%;
     margin: auto auto auto 400px;
     border-radius: 20% 40%;
     color: #001e46;
