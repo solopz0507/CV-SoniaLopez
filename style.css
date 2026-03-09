@@ -1,17 +1,7 @@
 
 /*--- Pour toutes les pages ---*/
 
-@media (max-width:640px){
-
-.menu{
-    flex-direction:column;
-}
-
-.container{
-    width:95%;
-}
-
-}
+/*@media (640px)*/
 
 body {
     background-image: url("assets/Photos/Fond-Site.jpeg");
@@ -54,7 +44,7 @@ h1 {
 
 .menu {
     margin-left: auto;
-    margin-right: 60px;
+    margin-right: 6%;
 }
 
 .container {
@@ -62,8 +52,9 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    padding: 20px;
+    max-width: 100%;
+    padding: 1%;
+    margin: 2% 0 0 0;
     flex-wrap: wrap;
 }
 
@@ -75,14 +66,14 @@ a {
 }
 
 .commentaire {
-    max-width: 700px;
-    height: 250px;
+    width: 50%;
+    height: 30%;
     padding: 5%;
-    margin: auto auto auto 400px;
+    margin: auto auto auto 10%;
     border-radius: 20% 40%;
     color: #001e46;
     background: radial-gradient(circle,#85edff 20%,#85ceff 50%, #1c93e2 85%);
-    font-size: 20px;
+    font-size: 1.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,8 +85,8 @@ footer {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3%;
+    margin-bottom: 2%;
     color: #ffbb00;
 }
 
@@ -104,9 +95,9 @@ footer {
 
 
 .container img {
-    width: 300px;
+    width: 20rem;
     height: auto;
-    margin: 0 auto auto 90%;
+    margin: 0 auto auto 60%;
     background-color: #ffbb00;
     border-radius: 50%;
     box-shadow: 0 0 15px #ffbb00, 0 0 50px #ffbb0071, 0 0 120px #ffbb0025;
