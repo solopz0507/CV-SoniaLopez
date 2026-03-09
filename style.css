@@ -1,7 +1,7 @@
 
 /*--- Pour toutes les pages ---*/
 
-@media (max-width:768px){
+@media (max-width:640px){
 
 .menu{
     flex-direction:column;
