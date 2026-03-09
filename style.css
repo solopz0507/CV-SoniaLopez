@@ -67,10 +67,10 @@ a {
 
 .commentaire {
     width: 50%;
-    height: 30%;
-    padding: 5%;
+    height: 20%;
+    padding: 2%;
     margin: auto auto auto 10%;
-    border-radius: 20% 40%;
+    border-radius: 100px 10px 100px 100px;
     color: #001e46;
     background: radial-gradient(circle,#85edff 20%,#85ceff 50%, #1c93e2 85%);
     font-size: 1.4rem;
@@ -136,8 +136,8 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     justify-items: center;
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 1%;
+    padding: 2%;
     font-family: RobotoSerif-Variable;
 }
 
