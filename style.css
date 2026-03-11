@@ -5,12 +5,42 @@
 }
 
 @media (max-width: 768px) { /* tablette et smartphone */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) { /* smartphone */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
 
 @media (max-width: 320px) { /* très petit smartphone */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 }
 
 body {
@@ -35,8 +65,9 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    gap: 70%;
+    gap: 20%;
 }
+
 @font-face {
     font-family: "LuckiestGuy";
     src: url("assets/fonts/LuckiestGuy-Regular.ttf");
@@ -53,7 +84,7 @@ h1 {
 }
 
 .menu {
-    margin-right: 30%;
+    margin-right: 20%;
 }
 
 .container {
@@ -86,7 +117,7 @@ h1 {
 a {
     text-decoration: none;
     color: #ffbb00;
-    font-size: 20px;
+    font-size: 1.5em;
     font-family: RobotoSerif-Variable;
 }
 
@@ -127,7 +158,7 @@ footer {
     color: #ffbb00;
     background-color: #00122b;
     font-family: RobotoSerif-Variable;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.5s;
@@ -139,7 +170,7 @@ footer {
 
 .présentation-boutons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
     gap: 20px;
     justify-items: center;
     margin-top: 1%;
@@ -157,11 +188,11 @@ button {
 .glow-btn {
     font-size: clamp(16px, 2vw, 24px);
     color: #85edff;
-    padding: 20px;
+    padding: 10%;
     margin: auto;
-    margin-left: 200px;
-    margin-right: 200px;
-    min-width: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+    min-width: 5%;
     border-radius: 25px;
     background: linear-gradient( to bottom right,#011C40, #0000002d);
     cursor: pointer;
@@ -214,7 +245,7 @@ section {
 }
 
 .card{
-    width: 600px;
+    width: 120%;
     min-height: 2%;
     transition: 0.4s;
     text-align: center;
