@@ -12,10 +12,6 @@
         width: 50%;
         margin: auto auto auto 10%;
     }
-
-    section {
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    }
 }
 
 @media (max-width: 768px) { /* tablette et smartphone */
@@ -47,7 +43,7 @@
         height: auto;
         margin: 0 auto 10px auto;
         display: block;
-        position: relative; /* ne masque plus le menu */
+        position: relative;
         z-index: 1;
     }
     
@@ -65,7 +61,7 @@
     .hamburger {
         display: block;
         font-size: 2.5rem;
-        z-index: 400; /* toujours au-dessus */
+        z-index: 100;
         cursor: pointer;
     }
 
@@ -76,10 +72,10 @@
         text-align: center;
         background-color: #0000002d;
         position: absolute;
-        top: 60px; /* en dessous du h1 */
+        top: 60px;
         left: 0;
         padding: 10px 0;
-        z-index: 500; /* au-dessus de la photo */
+        z-index: 100;
     }
 
     #menu-barre:checked + .hamburger + .menu {
@@ -94,7 +90,7 @@
     
     .présentation-boutons {
         display: grid;
-        grid-template-columns: 1fr; /* boutons empilés */
+        grid-template-columns: 1fr;
         gap: 15px;
         width: 90%;
         margin: 20px auto;
@@ -171,7 +167,7 @@ h1 {
     display: none;
     font-size: 2.5rem;
     cursor: pointer;
-    z-index: 200; /* au-dessus de la photo */
+    z-index: 200;
 }
 
 .menu {
@@ -269,7 +265,7 @@ footer {
 
 .présentation-boutons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-items: center;
     margin-top: 1%;
@@ -334,7 +330,7 @@ button {
 section {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px 1fr));
     justify-items: center;
     margin: 1%;
 }
