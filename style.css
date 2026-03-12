@@ -8,12 +8,19 @@
     nav {
         flex-direction: column;
         align-items: center;
+        position: relative;
     }
 
     nav ul {
         flex-direction: column;
         gap: 10px;
         align-items: center;
+    }
+
+    h1{
+        font-size: 1.6em;
+        text-align: center;
+        margin-left: 0;
     }
     
     .hamburger {
@@ -53,6 +60,14 @@
 
     section {
     grid-template-columns: 1fr;
+    }
+
+    a{
+        font-size: 1.1em;
+    }
+
+    .textes{
+        font-size: 1em;
     }
 
 }
