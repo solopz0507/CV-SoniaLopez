@@ -52,11 +52,7 @@
     }
 
     section {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    margin: 1%;
+        grid-template-columns: 1fr;
     }
 
 }
@@ -110,11 +106,7 @@
 
 
     section {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    margin: 1%;
+        grid-template-columns: 1fr;
     }
 }
 
