@@ -12,11 +12,16 @@
         width: 50%;
         margin: auto auto auto 10%;
     }
+
+    section {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
 }
 
 @media (max-width: 768px) { /* tablette et smartphone */
     nav {
         position: relative;
+        z-index: 300;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -32,13 +37,15 @@
     h1{
         font-size: 1.6em;
         text-align: center;
-        margin-left: 0;
+        margin: 10px 0;
+        z-index: 2;
     }
     
     .container img {
         width: 220px;
         max-width: 80%;
-        margin: 20px auto 10px;
+        height: auto;
+        margin: 0 auto 10px auto;
         display: block;
         position: relative; /* ne masque plus le menu */
         z-index: 1;
@@ -52,11 +59,14 @@
         font-size: 1rem;
         text-align: center;
         padding: 10px;
-        margin-bottom: 20px;
+        z-index: 2;
     }
     
     .hamburger {
         display: block;
+        font-size: 2.5rem;
+        z-index: 400; /* toujours au-dessus */
+        cursor: pointer;
     }
 
     .menu {
@@ -64,12 +74,12 @@
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: #000000d0;
+        background-color: #0000002d;
         position: absolute;
         top: 60px; /* en dessous du h1 */
         left: 0;
         padding: 10px 0;
-        z-index: 100; /* au-dessus de la photo */
+        z-index: 500; /* au-dessus de la photo */
     }
 
     #menu-barre:checked + .hamburger + .menu {
@@ -324,7 +334,7 @@ button {
 section {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     margin: 1%;
 }
@@ -336,9 +346,9 @@ section {
 .card{
     width: 100%;
     max-width: 600px;
-    min-height: 2%;
-    transition: 0.4s;
+    min-height: auto;
     text-align: center;
+    transition: 0.4s;
 }
 
 .card .descriptif {
