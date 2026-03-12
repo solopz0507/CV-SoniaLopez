@@ -1,20 +1,32 @@
 
 /*--- Pour toutes les pages ---*/
 
-@media (min-width: 1024px) { /* ordinateur */
+@media (min-width: 1000px) { /* ordinateur */
     .container img {
-    width: 20rem;
-    height: auto;
-    margin: 0 auto auto 60%;
+        width: 20rem;
+        max-width: 80%;
+        height: auto;
+        margin: 20px auto;
+        display: block;
     }
 
     .commentaire {
-        width: 50%;
-        margin: auto auto auto 10%;
+        max-width: 50%;
+        margin: 0;
+        text-align: left;
     }
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 1860px;
+        margin: 100px auto;
+        justify-items: center;
+    }   
 }
 
-@media (max-width: 768px) { /* tablette et smartphone */
+@media (max-width: 770px) { /* tablette et smartphone */
     nav {
         position: relative;
         z-index: 300;
@@ -194,7 +206,7 @@ h1 {
     width: 20rem;
     max-width: 80%;
     height: auto;
-    margin: 20px auto;
+    margin:auto;
     display: block;
     background-color: #ffbb00;
     border-radius: 50%;
@@ -219,9 +231,9 @@ a {
 
 .commentaire {
     width: 90%;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 100px 10px 100px 100px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 100px;
     color: #001e46;
     background: radial-gradient(circle,#85edff 20%,#85ceff 50%, #1c93e2 85%);
     font-size: 1.4rem;
@@ -400,3 +412,13 @@ h2 {
     border-radius: 0 0 30px 30px;
 }
 
+
+/*--- Page Scolarité ---*/
+
+.spécial {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 1%;
+}
